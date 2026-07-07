@@ -19,8 +19,7 @@ Setup
 	1.	Install Dependencies:
 pip install -r requirements.txt
 
-	2.	Configure Environment:
-cp .env.example .env
+	2.	Configure Environment: cp .env.example .env
 # Add your GROQ_API_KEY to the .env file
 
 Execution
