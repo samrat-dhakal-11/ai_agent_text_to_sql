@@ -1,16 +1,25 @@
 Campus Query — Intelligent SQL Chatbot
+
 Campus Query is a secure, persistent AI-powered interface that enables natural language interaction with complex academic databases.
+
 🚀 Key Features
 •	Secure Authentication: User accounts managed via app_data.db using PBKDF2-SHA256 password hashing.
+
 •	Persistent Conversations: History logging with automated session reloading via SQLite.
-•	Safety First: Multi-layered guardrails block prompt injection and enforce read-only SQL (blocking INSERT, UPDATE, DELETE, and DROP).
+
+•	Safety First: Multi-layered guardrails block prompt injection and enforce
+	read-only SQL (blocking INSERT, UPDATE, DELETE, and DROP).
+
 •	Dynamic Data: Expanded academic schema including students, departments, course enrollments, and attendance.
+
+
 🛠 Technical Architecture
 Component	Responsibility
 Streamlit	Interactive UI and session state management.
 LangGraph	Orchestration of SQL Agent and tool execution flow.
 Groq API	High-performance LLM inference.
 SQLite	Local persistence for user data and academic datasets.
+
 ⚙️ Getting Started
 Prerequisites
 •	Python 3.12+
